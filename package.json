@@ -2,12 +2,10 @@
   "name": "movies-app",
   "private": true,
   "version": "1.0.0",
-
   "engines": {
-    "node": "24.x",
-    "npm": ">=9"
+    "node": "^10.13 || 12 || 14 || 15",
+    "npm": ">=6"
   },
-
   "dependencies": {
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
@@ -28,7 +26,6 @@
     "react-slick-slider": "0.15.10",
     "slick-carousel": "1.8.1"
   },
-
   "devDependencies": {
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.1.0",
@@ -39,7 +36,6 @@
     "prettier": "2.2.1",
     "react-scripts": "4.0.3"
   },
-
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -49,28 +45,24 @@
     "format": "prettier --write \"./src\"",
     "run-all": "npm-run-all --parallel test lint:fix"
   },
-
   "lint-staged": {
     "*.js": [
       "npm run lint:fix"
     ],
-    "*.{js,jsx,json,html,css}": [
+    "*.{js, jsx, json, html, css}": [
       "npm run format"
     ]
   },
-
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
   },
-
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
     ]
   },
-
   "browserslist": {
     "development": [
       "last 2 chrome versions",
@@ -85,4 +77,3 @@
     ]
   }
 }
-
